@@ -35,4 +35,6 @@
         </list>
       </property>	
     </bean>
+    <bean id='teller1' class='be.vdab.Teller'/>
+    <bean id='teller2' class='be.vdab.Teller' scope='prototype'/>
 </beans>
