@@ -11,7 +11,7 @@ import be.vdab.restclients.KoersenClient;
 @Service
 public class EuroService {
 	private KoersenClient koersenClient;
-	public EuroService(@Qualifier("Yahoo") KoersenClient koersenClient) {
+	public EuroService(@Qualifier("ECB") KoersenClient koersenClient) {
 		this.koersenClient = koersenClient;
 	}
 	public BigDecimal naarDollar(BigDecimal euro) {
